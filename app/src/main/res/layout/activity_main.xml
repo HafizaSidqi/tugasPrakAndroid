@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#A9A9A9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="17dp" />
+
+            <TextView
+                android:id="@+id/Judul"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="CALCULATOR"
+                android:textAlignment="center"
+                android:typeface="monospace"
+                android:textColor="@color/black"
+                android:textSize="12pt"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="deskripsi : Calculator ini berfungsi untuk menghitung 3 Bangun Ruang sesuai dengan intruksi pada tugas II praktikum Teknologi Pemrograman Mobile"
+                android:textColor="#F0FFFF"
+                android:textSize="5pt"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:id="@+id/pjg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panjang/ Jari-jari : "
+            android:background="#A9A9A9"
+            android:textSize="4pt"
+            android:textColor="@color/black"
+            android:typeface="monospace"/>
+        <EditText
+            android:id="@+id/et_panjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pjg"
+            android:textColor="@color/white"
+            android:typeface="monospace"
+            android:textSize="4pt"
+            android:hint="Masukkan Panjang atau Jari-jari..."
+            android:textColorHint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:id="@+id/lbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lebar : "
+            android:background="#A9A9A9"
+            android:textSize="4pt"
+            android:typeface="monospace"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/et_lebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbr"
+            android:textColor="@color/white"
+            android:typeface="monospace"
+            android:textSize="4pt"
+            android:hint="Masukkan Lebar..."
+            android:textColorHint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:id="@+id/tg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinggi : "
+            android:background="#A9A9A9"
+            android:typeface="monospace"
+            android:textSize="4pt"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/et_tinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tg"
+            android:textColor="@color/white"
+            android:typeface="monospace"
+            android:textSize="4pt"
+            android:hint="Masukkan Panjang atau Jari-jari..."
+            android:textColorHint="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_volbalok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Volume Balok"
+                    android:textSize="5pt"
+                    android:theme="@style/Widget.AppCompat.Light.ActionButton" />
+
+                <Button
+                    android:id="@+id/btn_luasbalok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Luas Balok"
+                    android:textSize="5pt"
+                    android:theme="@style/Widget.AppCompat.Light.ActionButton" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_voltabung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Volume Tabung"
+                    android:textSize="5pt"
+                    android:theme="@style/Widget.AppCompat.Light.ActionButton" />
+
+                <Button
+                    android:id="@+id/btn_luastabung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Luas Tabung"
+                    android:textSize="5pt"
+                    android:theme="@style/Widget.AppCompat.Light.ActionButton" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_volkerucut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Volume Kerucut"
+                    android:textSize="5pt"
+                    android:theme="@style/Widget.AppCompat.Light.ActionButton" />
+
+                <Button
+                    android:id="@+id/btn_luaskerucut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Luas Kerucut"
+                    android:textSize="5pt"
+                    android:theme="@style/Widget.AppCompat.Light.ActionButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil : "
+            android:typeface="monospace"
+            android:background="#A9A9A9"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#A9A9A9"
+            android:typeface="monospace"
+            android:text="..."
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
